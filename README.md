@@ -65,6 +65,10 @@ CREATE DATABASE mi_tienda_db OWNER mi_tienda_user;
 sudo mkdir -p /var/www/html/mi_tienda
 sudo cp -r * /var/www/html/mi_tienda/
 
+# Tambien puedes clonar el repositorio
+cd /var/www/html/
+git clone https://github.com/Ang3llo55/mi_tienda.git
+
 # Importar schema.sql
 sudo -u postgres psql -d mi_tienda_db -f /var/www/html/mi_tienda/sql/schema.sql
 ```
@@ -268,5 +272,6 @@ Este proyecto es de código abierto y está disponible bajo la licencia MIT.
 Proyecto de ejemplo para demostración de PHP + PostgreSQL.
 
 ---
+
 
 **¡Listo para usar! 🎉**
